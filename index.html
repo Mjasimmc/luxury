@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Luxury Business - Elite Services for Discerning Clients">
+    <meta name="author" content="Your Luxury Business">
+    <title>Your Luxury Business</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="smooth-scroll">
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#home" class="text-3xl font-extrabold text-white logo">Luxury</a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden lg:flex space-x-12">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <!-- CTA Button -->
+            <button class="cta-button hidden lg:block">Request a Quote</button>
+
+            <!-- Mobile Menu Icon (Hamburger) -->
+            <button class="menu-icon lg:hidden text-white" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Navigation Links -->
+        <div id="mobile-menu" class="mobile-menu">
+            <!-- Close Button -->
+            <button class="close-icon text-white" onclick="toggleMobileMenu()">
+                <i class="fas fa-times"></i>
+            </button>
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <button class="cta-button mt-4 w-full">Request a Quote</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="hero-overlay"></div>
+        <video class="hero-video" autoplay loop muted>
+            <source src="luxury-hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text">
+            <h1 class="text-6xl font-extrabold mb-6">Transform Your Business with Luxury Solutions</h1>
+            <p class="text-2xl mb-8">Premium services designed for exceptional growth.</p>
+            <a href="#services" class="cta-button">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="parallax-section py-20" data-aos="fade-up" data-aos-delay="100">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-6">
+            <!-- Left Side: Image with Parallax Effect -->
+            <div class="relative parallax-container">
+                <img src="luxurycar.jpg" alt="About Us Image" class="w-full h-full object-cover rounded-lg shadow-lg parallax-image">
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70 rounded-lg"></div>
+                <div class="absolute bottom-4 left-4 text-white font-semibold text-lg bg-black bg-opacity-70 py-2 px-4 rounded-md">
+                    Innovative Business Solutions
+                </div>
+            </div>
+    
+            <!-- Right Side: Content -->
+            <div class="flex flex-col justify-center text-center lg:text-left">
+                <h2 class="text-4xl font-semibold mb-6 text-gradient">About Us</h2>
+                <p class="text-xl text-gray-300 leading-relaxed mb-8">
+                    We specialize in providing high-end business solutions tailored to the needs of discerning clients. Our goal is to deliver unparalleled results through innovative strategies and premium-quality service.
+                </p>
+                <div class="flex flex-col lg:flex-row gap-8 lg:gap-4 justify-center lg:justify-start">
+                    <!-- Iconic Features -->
+                    <div class="feature flex items-center gap-4 p-4 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105">
+                        <i class="fas fa-lightbulb text-gold text-3xl"></i>
+                        <p class="text-lg text-gray-300">Creative Solutions</p>
+                    </div>
+                    <div class="feature flex items-center gap-4 p-4 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105">
+                        <i class="fas fa-users text-gold text-3xl"></i>
+                        <p class="text-lg text-gray-300">Client-Centric Approach</p>
+                    </div>
+                    <div class="feature flex items-center gap-4 p-4 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105">
+                        <i class="fas fa-chart-line text-gold text-3xl"></i>
+                        <p class="text-lg text-gray-300">Proven Success</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-900 py-20" data-aos="fade-up" data-aos-delay="100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-12 text-gold">Our Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-card-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white">Consulting</h3>
+                    <p class="text-gray-400 mt-4">Providing elite strategies to elevate your business to the highest
+                        level.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white">Digital Solutions</h3>
+                    <p class="text-gray-400 mt-4">Tailored digital experiences for luxury brands looking to thrive in
+                        the online world.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white">Partnerships</h3>
+                    <p class="text-gray-400 mt-4">Forming exclusive, high-value partnerships that accelerate your
+                        business growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-black py-20">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-12 text-gold">Our Projects</h2>
+            <div class="project-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-card-img-container">
+                        <img src="project-1.jpg" alt="Project 1" loading="lazy">
+                        <div class="overlay">
+                            <h3 class="project-title">Project Title</h3>
+                            <p class="project-description">Brief description of the project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-card-img-container">
+                        <img src="project-1.jpg" alt="Project 1" loading="lazy">
+                        <div class="overlay">
+                            <h3 class="project-title">Project Title</h3>
+                            <p class="project-description">Brief description of the project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-card-img-container">
+                        <img src="project-1.jpg" alt="Project 1" loading="lazy">
+                        <div class="overlay">
+                            <h3 class="project-title">Project Title</h3>
+                            <p class="project-description">Brief description of the project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-card-img-container">
+                        <img src="project-1.jpg" alt="Project 1" loading="lazy">
+                        <div class="overlay">
+                            <h3 class="project-title">Project Title</h3>
+                            <p class="project-description">Brief description of the project.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-900 py-20 relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="absolute inset-0 bg-cover bg-center"
+            style="background-image: url('assets/images/contact-bg.jpg'); opacity: 0.7;"></div>
+        <div class="max-w-7xl mx-auto relative text-center z-10">
+            <h2 class="text-4xl font-semibold mb-12 text-gold">Contact Us</h2>
+            <p class="text-lg text-gray-300 mb-12">We would love to hear from you! Please fill out the form below to get
+                in touch with us.</p>
+            <form id="contact-form" class="space-y-8 bg-black p-10 rounded-xl shadow-xl">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" class="form-input" placeholder="Your Message" rows="6"
+                        required></textarea>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="cta-button hover:scale-105 transition-all">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Your Luxury Business. All rights reserved.</p>
+        <div class="mt-4 space-x-6">
+            <a href="#" class="hover:text-gray-400">Facebook</a>
+            <a href="#" class="hover:text-gray-400">Twitter</a>
+            <a href="#" class="hover:text-gray-400">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/tailwind.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init({ duration: 1200 });
+
+        // Scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const smoothScrollLinks = document.querySelectorAll('.smooth-scroll a');
+            smoothScrollLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const targetId = event.target.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
